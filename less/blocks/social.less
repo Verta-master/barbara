@@ -1,0 +1,39 @@
+.social {
+  .reset();
+  list-style: none;
+  margin-top: 40px;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.social__item {
+  margin-right: 24px;
+}
+
+.social__link {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #e4e5ec;
+  .transition();
+  
+  svg {
+    fill: #A7ABBD;
+    .transition();
+  }
+  
+  &:hover,
+  &:active {
+    border-color: @red;
+    .transition();
+    
+    svg {
+      fill: @red;
+      .transition();
+    }
+  }
+}

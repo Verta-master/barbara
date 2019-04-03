@@ -1,0 +1,39 @@
+.subscribe {
+  width: 384px;
+  display: flex;
+  justify-content: flex-start;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.03);
+  border: solid 1px #e4e5ec;
+}
+
+.subscribe__input {
+  display: block;
+  padding: 0 20px;
+  flex-grow: 1;
+  height: 48px;
+  font-size: 14px;
+  
+  &::placeholder {
+    color: #6b6f81;
+    opacity: 1;
+  }
+}
+
+.subscribe__btn {
+  display: block;
+  font-family: "Georgia", "Arial", sans-serif;
+  color: @red;
+  font-size: 14px;
+  line-height: 1;
+  width: 102px;
+  height: 48px;
+  box-shadow: -1px 0 0 0 #e4e5ec;
+  border: 1px solid rgba(255,255,255,0);
+  .transition();
+  
+  &:hover,
+  &:active {
+    border-color: @red;
+    .transition();
+  }
+}

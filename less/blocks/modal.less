@@ -1,0 +1,35 @@
+.modal {
+  max-width: 592px;
+  padding: 40px 144px;
+  padding-top: 30px;
+  box-shadow: 0 0 33px 0 rgba(0, 0, 0, 0.06);
+  border: solid 1px #fafafa;
+  background-color: #ffffff;
+  
+  .title {
+    text-align: center;
+  }
+}
+
+.modal__links {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: @red;
+  
+  a {
+    border-bottom: 1px solid #fff;
+    .transition();
+  }
+  
+  a:hover,
+  a:active {
+    border-color: @red;
+    .transition();
+  }
+}
+
+.fancybox-bg {
+  background: rgba(255,255,255,0);
+}
