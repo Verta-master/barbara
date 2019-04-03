@@ -472,6 +472,9 @@ h2,
   font-size: 32px;
   letter-spacing: -0.3px;
 }
+.title--center {
+  text-align: center;
+}
 .link {
   font-family: "Georgia", "Arial", sans-serif;
   color: #7a1942;
@@ -793,6 +796,16 @@ h2,
   background-position: center;
   background-size: cover;
 }
+.position--left::before {
+  left: 0;
+  right: auto;
+  top: 96px;
+  bottom: 32px;
+}
+.position--left .position__img::before {
+  left: -32px;
+  right: 0;
+}
 .position__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -830,6 +843,7 @@ h2,
 }
 .collection {
   position: relative;
+  margin-bottom: 100px;
 }
 .collection__info {
   width: 888px;
@@ -978,4 +992,72 @@ h2,
   border-color: #7a1942;
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
+}
+.blog {
+  margin-bottom: 240px;
+}
+.blog__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.blog__block {
+  width: 592px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+}
+.blog__block::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 96px;
+  bottom: 32px;
+  left: 0;
+  right: -32px;
+  background-image: url(../img/images/flowers-3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.blog__img {
+  width: 280px;
+  height: 248px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+.blog__img:last-of-type {
+  margin-left: 32px;
+}
+.blog__img--big {
+  width: 100%;
+  margin-bottom: 32px;
+}
+.blog__img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.blog__info {
+  width: 592px;
+  padding-left: 72px;
+  padding-right: 72px;
 }
