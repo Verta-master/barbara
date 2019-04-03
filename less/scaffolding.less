@@ -74,6 +74,7 @@ h6,
 h1,
 h2,
 .title {
+  margin-top: 0;
   font-size: 32px;
   letter-spacing: -0.3px;
 }
@@ -83,11 +84,15 @@ h2,
 }
 
 .link {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 20px;
   font-family: "Georgia", "Arial", sans-serif;
   color: @red;
+  border-bottom: 1px solid rgba(255,255,255,0);
   
   &:hover,
   &:active {
-    border-bottom: 1px solid @red;
+    border-color: @red;
   }
 }
