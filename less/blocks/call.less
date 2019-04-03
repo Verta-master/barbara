@@ -1,0 +1,35 @@
+.call {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-left: 32px;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    background-color: @red;
+    background-image: url(../img/icons/call-answer.svg);
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+    background-position: center;
+    transform: rotate(270deg);
+  }
+}
+
+.call__phone {
+  margin-right: 15px;
+  font-weight: 500;
+  .transition();
+  
+  &:hover,
+  &:active {
+    color: @red;
+    .transition();
+  }
+}
