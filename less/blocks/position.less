@@ -1,0 +1,51 @@
+.position {
+  position: relative;
+  margin-bottom: 208px;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: -32px;
+    bottom: -32px;
+    right: 0;
+    width: ~"calc(50% - 608px)";
+    background-image: url(../img/images/flowers-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.position__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.position__img {
+  width: 592px;
+  position: relative;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 32px;
+    bottom: 32px;
+    left: 0;
+    right: -32px;
+    background-color: #fafafa;
+  }
+  
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.position__info {
+  width: 592px;
+  padding-left: 72px;
+  padding-right: 72px;
+}
