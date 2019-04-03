@@ -99,7 +99,7 @@ gulp.task("copy", function () {
   .pipe(gulp.dest("build"));
 });
 
-gulp.task("serve", ["style:dev", "symbols"], function () {
+gulp.task("serve", ["style:dev"], function () {
   server.init({
     server: ".",
     notify: false,
@@ -121,7 +121,7 @@ gulp.task("build", function(fn) {
   run(
     "clean",
     "copy",
-    "symbols",
+//    "symbols",
     "images",
     "style:production",
     "js:production",
