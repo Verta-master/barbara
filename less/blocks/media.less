@@ -1,0 +1,252 @@
+@media (max-width: 1400px) {
+  .wrapper {
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .collection__prev,
+  .collection__next {
+    width: 25px;
+  }
+  .collection__slider-wrap {
+    width: 100%;
+    
+    &::before {
+      left: 25px;
+      right: 25px;
+    }
+    
+    &::after {
+      left: 0;
+      right: auto;
+    }
+  }
+  .collection__wrap {
+    &::before {
+      left: 25px;
+    }
+
+    &::after {
+      right: 25px;
+    }
+  }
+}
+
+//---------------------------------------------
+@media (max-width: 1278px) {
+  .header__menu {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .blog,
+  .position {
+    margin-bottom: 100px;
+  }
+  .collection__info {
+    width: 750px;
+  }
+  .collection__slider {
+    width: 904px;
+  }
+  .collection__next {
+    width: 35px;
+    right: 25px;
+  }
+  .collection__prev {
+    width: 35px;
+    left: 25px;
+  }
+  .collection__slider-wrap::before {
+    left: 60px;
+    right: 60px;
+  }
+  .collection__wrap {
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+  .blog__img {
+    width: 47%;
+    height: 198px;
+    
+    &--big {
+      width: 100%;
+    }
+  }
+  .position__img,
+  .position__info {
+    width: 50%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .position::before,
+  .position__img::before {
+    display: none;
+  }
+  .footer {
+    padding-top: 32px;
+  }
+  .footer__block {
+    width: 47%;
+  }
+}
+
+//---------------------------------------
+@media (max-width: 1022px) {
+  .collection__slider-wrap::after,
+  .header__menu {
+    display: none;
+  }
+  .collection__info {
+    width: 100%;
+    padding-top: 0;
+  }
+  .collection__slider-wrap::before {
+    left: 0;
+    right: 0;
+  }
+  .collection__slider {
+    width: 592px;
+  }
+  .collection__next {
+    right: ~"calc(50% - 328px)";
+  }
+  .collection__prev {
+    left: ~"calc(50% - 328px)";
+  }
+  .blog__wrap {
+    display: block;
+  }
+  .blog__block {
+    width: 100%;
+    margin-bottom: 30px;
+    
+    &::before {
+      left: -25px;
+      right: -25px;
+    }
+  }
+  .blog__info {
+    width: 100%;
+    padding: 0;
+  }
+  .blog__img {
+    height: 300px;
+  }
+  .footer__wrap {
+    flex-direction: column-reverse;
+  }
+  .footer__block {
+    width: 100%;
+  }
+  .subscribe {
+    margin-top: 30px;
+  }
+  .title,
+  h2 {
+    font-size: 28px;
+  }
+}
+
+//------------------------------------------
+@media (max-width: 662px) {
+  .collection__slider {
+    width: 280px;
+  }
+  .collection__next {
+    right: ~"calc(50% - 175px)";
+  }
+  .collection__prev {
+    left: ~"calc(50% - 175px)";
+  }
+  .blog__img {
+    height: 190px;
+  }
+  .position__wrap {
+    flex-direction: column;
+  }
+  .position__info {
+    width: 100%;
+    order: 1;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .position__img {
+    width: 100%;
+    order: 2;
+    padding: 0;
+  }
+  .collection__info {
+    padding-right: 0;
+  }
+  .slogan {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .promo__slide {
+    height: 400px;
+  }
+  .header__wrap {
+    flex-wrap: wrap;
+  }
+  .logo {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .call {
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .search__open,
+  .menu__btn {
+    height: 100%;
+  }
+  .position--left {
+    .position__img {
+      order: 1;
+      margin-bottom: 20px;
+    }
+    .position__info {
+      order: 2;
+      margin-bottom: 0;
+    }
+  }
+}
+
+//--------------------------------------
+@media (max-width: 498px) {
+  .wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .header .call {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .header .call__phone {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+  .subscribe {
+    width: 100%;
+  }
+  .blog__block::before {
+    left: -10px;
+    right: -10px;
+  }
+  .blog__img {
+    height: 125px;
+  }
+  .collection__next {
+    right: ~"calc(50% - 160px)";
+  }
+  .collection__prev {
+    left: ~"calc(50% - 160px)";
+  }
+  .modal {
+    padding: 30px 20px;
+  }
+}
