@@ -1,0 +1,83 @@
+.block__wrap {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 56px;
+    left: 0;
+    right: 0;
+    border: solid 1px #f5f5f5;
+    background-color: #fafafa;
+  }
+}
+
+.block__img {
+  position: relative;
+  z-index: 5;
+  width: 592px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 96px;
+    bottom: 96px;
+    left: 0;
+    right: -32px;
+    background-image: url(../img/images/flowers-3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.block__info {
+  width: 592px;
+  padding-left: 72px;
+  padding-right: 72px;
+  padding-top: 48px;
+}
+
+.block__title {
+  font-weight: 500;
+}
+
+.block__colors {
+  .reset();
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+}
+
+.block__color {
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  border-radius: 2px;
+  border: solid 1px #f5f5f5;
+  overflow: hidden;
+  
+  img {
+    display: block;
+  }
+}

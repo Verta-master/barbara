@@ -18,19 +18,19 @@
           <a href="#" class="menu__link">Главная страница</a>
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__link">Коллекции</a>
+          <a href="#" class="menu__link menu__item--active">Коллекции</a>
           <ul class="menu__sublist">
-            <li class="menu__subitem"><a href="#">Галатея</a></li>
+            <li class="menu__subitem menu__subitem--active"><a href="#">Галатея</a></li>
             <li class="menu__subitem"><a href="#">Лада / Лада свет</a></li>
             <li class="menu__subitem"><a href="#">Моана</a></li>
             <li class="menu__subitem"><a href="#">Нерей</a></li>
           </ul>
         </li>
-        <li class="menu__item menu__item--active">
+        <li class="menu__item">
           <a href="#" class="menu__link">Изделия</a>
           <ul class="menu__sublist">
             <li class="menu__subitem"><a href="#">Тумбы</a></li>
-            <li class="menu__subitem menu__subitem--active"><a href="#">Зеркала и навесные шкафы</a></li>
+            <li class="menu__subitem"><a href="#">Зеркала и навесные шкафы</a></li>
             <li class="menu__subitem"><a href="#">Комоды и пенал</a></li>
             <li class="menu__subitem"><a href="#">Комплектующие</a></li>
           </ul>
@@ -57,10 +57,10 @@
     </nav>
     
     <div class="wrapper header__wrap">
-      <div class="logo">
+      <a href="index.html" class="logo">
         <img src="img/images/logo-dark.png" alt="Logo">
         <span>bathroom furniture</span>
-      </div>
+      </a>
       <nav class="header__menu">
         <ul class="header__list">
           <li class="header__item"><a href="#">Главная</a></li>
@@ -86,58 +86,109 @@
   </header>
   
   <main>
-    <section class="promo">
-      <div class="swiper-container promo__slider">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide promo__slide" style="background-image: url(img/images/bg-main.jpg)">
-            <figure class="promo__title">
-              <img src="img/images/logo.png" alt="Logo">
-            </figure>
-          </div>
-          <div class="swiper-slide promo__slide" style="background-image: url(img/images/bg-main.jpg)">
-            <figure class="promo__title">
-              <img src="img/images/logo.png" alt="Logo">
-            </figure>
-          </div>
-          <div class="swiper-slide promo__slide" style="background-image: url(img/images/bg-main.jpg)">
-            <figure class="promo__title">
-              <img src="img/images/logo.png" alt="Logo">
-            </figure>
-          </div>
-          <div class="swiper-slide promo__slide" style="background-image: url(img/images/bg-main.jpg)">
-            <figure class="promo__title">
-              <img src="img/images/logo.png" alt="Logo">
-            </figure>
-          </div>
-        </div>
-        <div class="swiper-pagination promo__pagination"></div>
+    <section class="top">
+      <figure class="top__img">
+        <img src="img/images/bg-main.jpg" alt="Barbara Q">
+      </figure>
+      
+      <div class="wrapper">
+        <nav class="breadcrumbs">
+          <a href="#" class="breadcrumbs__link">Главная</a>
+          <a href="#" class="breadcrumbs__link">Наши коллекции</a>
+          <span class="breadcrumbs__link">Название коллекции</span>
+        </nav>
+        
+        <h1>Название коллекции</h1>
+        <p>Наши дизайнеры намеренно отказались от кричащих форм и цветов, чтобы Barbara Q дополняла интерьер, а не доминировала в нем. Несмотря на это, эта мебель остается привлекательным и функциональным акцентом. Мы продумали все до мелочей, но сохранили возможность проявить творческий потенциал заказчика и создать пространство, отвечающее всем его требованиям и пожеланиям.</p>
       </div>
     </section>
     
-    <section class="slogan">
-      <div class="slogan__wrap">
-        <p>Barbara Q - это мебель для ванных комнат, совершенно новая для Российского рынка. Высокотехнологичные изделия изготовлены с учетом новых тенденций мебельного дизайна Европы и ориентированы на комфорт и эргономику ее владельца.</p>
-      </div>
-    </section>
-    
-    <section class="position">
-      <div class="wrapper position__wrap">
-        <figure class="position__img">
-          <img src="img/images/img-1.png" alt="Позиционирование себя на рынке">
+    <section class="block">
+      <div class="wrapper block__wrap">
+        <figure class="block__img">
+          <img src="img/images/img-6.png" alt="Название текстового блока">
         </figure>
-        <div class="position__info">
-          <p class="title">Позиционирование себя на рынке</p>
-          <p>Мебель для ванных комнат Barbara Q – это качество и комфорт, выверенные до мелочей.</p>
-          <a href="#" class="link">Подробнее о Barbara Q</a>
+        <div class="block__info">
+          <p class="title">Название текстового блока в две строки</p>
+          <p class="block__title">Характеристики</p>
+          <p>Barbara Q - это уникальная мебель для ванных комнат, создание которой производилось с особой тщательностью, пониманием модных тенденций, применением новейших технологий и передового оборудования.</p>
+          <p class="block__title">Доступные цвета</p>
+          <ul class="block__colors">
+            <li class="block__color">
+              <img src="img/images/color-1.jpg" alt="Color 1">
+            </li>
+            <li class="block__color">
+              <img src="img/images/color-2.jpg" alt="Color 2">
+            </li>
+            <li class="block__color">
+              <img src="img/images/color-3.jpg" alt="Color 3">
+            </li>
+            <li class="block__color">
+              <img src="img/images/color-4.jpg" alt="Color 4">
+            </li>
+          </ul>
+          <a href="#" class="link">Где купить</a>
         </div>
       </div>
     </section>
     
     <section class="collection">
       <div class="wrapper">
+        <p class="title">Детали коллекции:</p>
+        <ul class="collection__list">
+          <li class="collection__item">
+            <a href="#" class="collection__link">
+              <figure class="collection__img">
+                <img src="img/images/slide-1.png" alt="Название">
+              </figure>
+              <div class="collection__text">
+                <p class="collection__title">Название</p>
+                <p>Неоспоримое совершенство линий, которое будет радовать вас каждый день</p>
+              </div>
+            </a>
+          </li>
+          <li class="collection__item">
+            <a href="#" class="collection__link">
+              <figure class="collection__img">
+                <img src="img/images/slide-2.png" alt="Название">
+              </figure>
+              <div class="collection__text">
+                <p class="collection__title">Название</p>
+                <p>Неоспоримое совершенство линий, которое будет радовать вас каждый день</p>
+              </div>
+            </a>
+          </li>
+          <li class="collection__item">
+            <a href="#" class="collection__link">
+              <figure class="collection__img">
+                <img src="img/images/slide-1.png" alt="Название">
+              </figure>
+              <div class="collection__text">
+                <p class="collection__title">Название</p>
+                <p>Неоспоримое совершенство линий, которое будет радовать вас каждый день</p>
+              </div>
+            </a>
+          </li>
+          <li class="collection__item">
+            <a href="#" class="collection__link">
+              <figure class="collection__img">
+                <img src="img/images/slide-2.png" alt="Название">
+              </figure>
+              <div class="collection__text">
+                <p class="collection__title">Название</p>
+                <p>Неоспоримое совершенство линий, которое будет радовать вас каждый день</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="collection">
+      <div class="wrapper">
         <div class="collection__info">
-          <p class="title">Наши коллекции</p>
-          <p>Коллекции в ассортименте Barbara Q в максимальной комплектации состоят из пеналов, тумб, зеркальных навесных шкафов, зеркал с мягкой подсветкой и раковин (встроенных и накладных) от лучших производителей. Все элементы из одной коллекции вы можете комбинировать по своему желанию.  Коллекции отличаются друг от друга навесными либо стандартными тумбами и  небольшими элементами дизайна: формами линий, разными вариантами систем открывания модулей.</p>
+          <p class="title">Из чего состоит</p>
+          <p>Наши дизайнеры намеренно отказались от кричащих форм и цветов, чтобы Barbara Q дополняла интерьер, а не доминировала в нем. Несмотря на это, эта мебель остается привлекательным и функциональным акцентом. Мы продумали все до мелочей, но сохранили возможность проявить творческий потенциал заказчика и создать пространство, отвечающее всем его требованиям и пожеланиям.</p>
           <a href="#" class="link">Перейти в каталог Barbara Q</a>
         </div>
       </div>
@@ -148,10 +199,10 @@
               <div class="swiper-slide collection__slide">
                 <a href="#" class="collection__link">
                   <figure class="collection__img">
-                    <img src="img/images/slide-1.png" alt="Галатея">
+                    <img src="img/images/slide-3.png" alt="Галатея">
                   </figure>
                   <div class="collection__text">
-                    <p class="collection__title">Галатея</p>
+                    <p class="collection__title">Название</p>
                     <p>Неоспоримое совершенство линий, которое будет радовать вас каждый день</p>
                   </div>
                 </a>
@@ -159,10 +210,10 @@
               <div class="swiper-slide collection__slide">
                 <a href="#" class="collection__link">
                   <figure class="collection__img">
-                    <img src="img/images/slide-2.png" alt="Нерей">
+                    <img src="img/images/slide-3.png" alt="Нерей">
                   </figure>
                   <div class="collection__text">
-                    <p class="collection__title">Нерей</p>
+                    <p class="collection__title">Название</p>
                     <p>Неоспоримое совершенство линий, которое будет радовать вас каждый день</p>
                   </div>
                 </a>
@@ -170,10 +221,10 @@
               <div class="swiper-slide collection__slide">
                 <a href="#" class="collection__link">
                   <figure class="collection__img">
-                    <img src="img/images/slide-1.png" alt="Моана">
+                    <img src="img/images/slide-3.png" alt="Моана">
                   </figure>
                   <div class="collection__text">
-                    <p class="collection__title">Моана</p>
+                    <p class="collection__title">Название</p>
                     <p>Неоспоримое совершенство линий, которое будет радовать вас каждый день</p>
                   </div>
                 </a>
@@ -181,10 +232,10 @@
               <div class="swiper-slide collection__slide">
                 <a href="#" class="collection__link">
                   <figure class="collection__img">
-                    <img src="img/images/slide-1.png" alt="Электра">
+                    <img src="img/images/slide-3.png" alt="Электра">
                   </figure>
                   <div class="collection__text">
-                    <p class="collection__title">Электра</p>
+                    <p class="collection__title">Название</p>
                     <p>Неоспоримое совершенство линий, которое будет радовать вас каждый день</p>
                   </div>
                 </a>
@@ -192,10 +243,10 @@
               <div class="swiper-slide collection__slide">
                 <a href="#" class="collection__link">
                   <figure class="collection__img">
-                    <img src="img/images/slide-1.png" alt="Галатея">
+                    <img src="img/images/slide-3.png" alt="Галатея">
                   </figure>
                   <div class="collection__text">
-                    <p class="collection__title">Галатея</p>
+                    <p class="collection__title">Название</p>
                     <p>Неоспоримое совершенство линий, которое будет радовать вас каждый день</p>
                   </div>
                 </a>
@@ -203,10 +254,10 @@
               <div class="swiper-slide collection__slide">
                 <a href="#" class="collection__link">
                   <figure class="collection__img">
-                    <img src="img/images/slide-2.png" alt="Нерей">
+                    <img src="img/images/slide-3.png" alt="Нерей">
                   </figure>
                   <div class="collection__text">
-                    <p class="collection__title">Нерей</p>
+                    <p class="collection__title">Название</p>
                     <p>Неоспоримое совершенство линий, которое будет радовать вас каждый день</p>
                   </div>
                 </a>
@@ -218,43 +269,6 @@
         </div>
       </div>
       <a href="#" class="collection__btn">Все коллекции</a>
-    </section>
-    
-    <section class="blog">
-      <div class="wrapper">
-        <p class="title title--center">Идеи для вашей ванной комнаты</p>
-        <div class="blog__wrap">
-          <div class="blog__block">
-            <figure class="blog__img blog__img--big">
-              <img src="img/images/img-3.png" alt="Идеи для вашей ванной комнаты">
-            </figure>
-            <figure class="blog__img">
-              <img src="img/images/img-4.png" alt="Идеи для вашей ванной комнаты">
-            </figure>
-            <figure class="blog__img">
-              <img src="img/images/img-5.png" alt="Идеи для вашей ванной комнаты">
-            </figure>
-          </div>
-          <div class="blog__info">
-            <p class="title">5 советов как визуально расширить ванную комнату</p>
-            <p>Очень часто под ванную комнату при планировке отводят очень маленькое помещение. Если вы обладатель небольшой ванной комнаты – не переживайте.  С помощью простых советов от фабрики Barbara Q  вы легко визуально расширите вашу ванную комнату.</p>
-            <a href="#" class="link">Подробнее</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <section class="position position--left">
-      <div class="wrapper position__wrap">
-        <div class="position__info">
-          <p class="title">5 советов как визуально расширить ванную комнату</p>
-          <p>Очень часто под ванную комнату при планировке отводят очень маленькое помещение. Если вы обладатель небольшой ванной комнаты – не переживайте.  С помощью простых советов от фабрики Barbara Q  вы легко визуально расширите вашу ванную комнату.</p>
-          <a href="#" class="link">Подробнее</a>
-        </div>
-        <figure class="position__img">
-          <img src="img/images/img-2.png" alt="Позиционирование себя на рынке">
-        </figure>
-      </div>
     </section>
   </main>
   
@@ -348,7 +362,7 @@
         el: '.promo__pagination',
         clickable: true,
       },
-//      simulateTouch: false,
+      simulateTouch: false,
       preventClicks: false,
       preventClicksPropagation: false,
     });

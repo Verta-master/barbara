@@ -1,0 +1,36 @@
+.top {
+  position: relative;
+  padding-bottom: 80px;
+  
+  p {
+    max-width: 904px;
+  }
+  
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: ~"calc(50% + 608px)";
+    background-image: url(../img/images/flowers-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.top__img {
+  width: 100%;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
