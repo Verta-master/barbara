@@ -891,6 +891,10 @@ h2,
 .collection__wrap::after {
   right: 48px;
 }
+.collection__wrap--simple::before,
+.collection__wrap--simple::after {
+  display: none;
+}
 .collection__slider-wrap {
   width: 1312px;
   padding-top: 32px;
@@ -966,6 +970,7 @@ h2,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #fff;
 }
 .collection__img img {
   display: block;
@@ -1013,6 +1018,29 @@ h2,
   border-color: #7a1942;
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
+}
+.collection__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 40px;
+  margin-bottom: 125px;
+}
+.collection__item {
+  width: 280px;
+  margin-right: 32px;
+  margin-bottom: 30px;
+}
+.collection__item:nth-child(4n) {
+  margin-right: 0;
 }
 .blog {
   margin-bottom: 240px;
@@ -1365,7 +1393,7 @@ h2,
 }
 .top {
   position: relative;
-  padding-bottom: 80px;
+  padding-bottom: 75px;
 }
 .top p {
   max-width: 904px;
@@ -1402,8 +1430,8 @@ h2,
   height: auto;
 }
 .breadcrumbs {
-  padding-top: 40px;
-  padding-bottom: 24px;
+  padding-top: 35px;
+  padding-bottom: 20px;
 }
 .breadcrumbs__link {
   display: inline-block;
@@ -1412,13 +1440,13 @@ h2,
 }
 a.breadcrumbs__link {
   position: relative;
-  margin-right: 15px;
+  margin-right: 8px;
   text-decoration: underline;
 }
 a.breadcrumbs__link::after {
   content: "";
   position: relative;
-  right: -10px;
+  right: -6px;
   bottom: 0;
   display: inline-block;
   vertical-align: middle;
@@ -1429,6 +1457,9 @@ a.breadcrumbs__link::after {
 a.breadcrumbs__link:hover,
 a.breadcrumbs__link:active {
   text-decoration: none;
+}
+.block {
+  margin-bottom: 40px;
 }
 .block__wrap {
   position: relative;
@@ -1493,6 +1524,7 @@ a.breadcrumbs__link:active {
   padding-top: 48px;
 }
 .block__title {
+  margin-bottom: 18px;
   font-weight: 500;
 }
 .block__colors {
@@ -1510,7 +1542,7 @@ a.breadcrumbs__link:active {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 80px;
+  margin-bottom: 55px;
 }
 .block__color {
   width: 32px;
