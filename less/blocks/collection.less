@@ -32,6 +32,13 @@
   &::after {
     right: 48px;
   }
+  
+  &--simple {
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .collection__slider-wrap {
@@ -111,6 +118,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #fff;
   
   img {
     display: block;
@@ -154,5 +162,25 @@
   &:active {
     border-color: @red;
     .transition();
+  }
+}
+
+.collection__list {
+  .reset();
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 40px;
+  margin-bottom: 125px;
+}
+
+.collection__item {
+  width: 280px;
+  margin-right: 32px;
+  margin-bottom: 30px;
+  
+  &:nth-child(4n) {
+    margin-right: 0;
   }
 }
