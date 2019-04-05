@@ -86,78 +86,141 @@
   </header>
   
   <main>
-    <section class="top">
-      <figure class="top__img">
-        <img src="img/images/bg-main.jpg" alt="Barbara Q">
-      </figure>
-      
-      <div class="wrapper">
-        <nav class="breadcrumbs">
-          <a href="#" class="breadcrumbs__link">Главная</a>
-          <span class="breadcrumbs__link">Наши коллекции</span>
-        </nav>
-        
-        <h1>Наши коллекции</h1>
-        <p>Коллекции в ассортименте Barbara Q в максимальной комплектации состоят из пеналов, тумб, зеркальных навесных шкафов, зеркал с мягкой подсветкой и раковин (встроенных и накладных) от лучших производителей. Все элементы из одной коллекции вы можете комбинировать по своему желанию.  Коллекции отличаются друг от друга навесными либо стандартными тумбами и  небольшими элементами дизайна: формами линий, разными вариантами систем открывания модулей.</p>
-      </div>
-    </section>
+    <figure class="top__img">
+      <img src="img/images/bg-main.jpg" alt="Barbara Q">
+    </figure>
     
-    <section class="collection collection--catalog">
-      <div class="wrapper collection__wrapper">
-        <ul class="collection__list">
-          <li class="collection__item">
-            <a href="#" class="collection__link">
-              <figure class="collection__img">
-                <img src="img/images/slide-1.png" alt="Галатея">
-              </figure>
-              <div class="collection__text">
-                <p class="collection__title">Галатея</p>
-                <p>Неоспоримое совершенство линий, которое будет радовать вас каждый день</p>
+    <section class="catalog">
+      <div class="wrapper wrapper--columns">
+        <div class="sidebar">
+          <div class="sidebar__filter">
+            <button type="button" class="sidebar__btn">Параметры</button>
+            <form action="#" class="sidebar__form">
+              <fieldset class="sidebar__field">
+                <p class="sidebar__title">Конфигурация</p>
+                <input type="checkbox" class="checkbox" id="check1" checked>
+                <label for="check1" class="checkbox__label">Пенал лайт</label>
+                <input type="checkbox" class="checkbox" id="check2" checked>
+                <label for="check2" class="checkbox__label">Пенал ультралайт</label>
+                <input type="checkbox" class="checkbox" id="check3" checked>
+                <label for="check3" class="checkbox__label">Пенал стандарт</label>
+              </fieldset>
+              <fieldset class="sidebar__field">
+                <p class="sidebar__title">Установка</p>
+                <input type="checkbox" class="checkbox" id="check4">
+                <label for="check4" class="checkbox__label">Навесной</label>
+                <input type="checkbox" class="checkbox" id="check5">
+                <label for="check5" class="checkbox__label">Напольный</label>
+              </fieldset>
+              <fieldset class="sidebar__field">
+                <p class="sidebar__title">Размер</p>
+                <input type="checkbox" class="checkbox" id="check6" checked>
+                <label for="check6" class="checkbox__label">230 - 3200</label>
+                <input type="checkbox" class="checkbox" id="check7" checked>
+                <label for="check7" class="checkbox__label">440 - 600</label>
+                <input type="checkbox" class="checkbox" id="check8" checked>
+                <label for="check8" class="checkbox__label">400 - 900</label>
+              </fieldset>
+              <fieldset class="sidebar__field">
+                <p class="sidebar__title">Тип открывания</p>
+                <input type="checkbox" class="checkbox" id="check9">
+                <label for="check9" class="checkbox__label">Grab</label>
+                <input type="checkbox" class="checkbox" id="check10">
+                <label for="check10" class="checkbox__label">Push</label>
+              </fieldset>
+              <div class="sidebar__wrap">
+                <a href="#" class="sidebar__clear">Сбросить фильтр</a>
+                <button type="submit" class="btn sidebar__apply">Применить</button>
               </div>
-            </a>
-          </li>
-          <li class="collection__item">
-            <a href="#" class="collection__link">
-              <figure class="collection__img">
-                <img src="img/images/slide-2.png" alt="Нерей">
-              </figure>
-              <div class="collection__text">
-                <p class="collection__title">Нерей</p>
-                <p>Неоспоримое совершенство линий, которое будет радовать вас каждый день</p>
-              </div>
-            </a>
-          </li>
-          <li class="collection__item">
-            <a href="#" class="collection__link">
-              <figure class="collection__img">
-                <img src="img/images/slide-1.png" alt="Моана">
-              </figure>
-              <div class="collection__text">
-                <p class="collection__title">Моана</p>
-                <p>Неоспоримое совершенство линий, которое будет радовать вас каждый день</p>
-              </div>
-            </a>
-          </li>
-          <li class="collection__item">
-            <a href="#" class="collection__link">
-              <figure class="collection__img">
-                <img src="img/images/slide-2.png" alt="Электра">
-              </figure>
-              <div class="collection__text">
-                <p class="collection__title">Электра</p>
-                <p>Неоспоримое совершенство линий, которое будет радовать вас каждый день</p>
-              </div>
-            </a>
-          </li>
-        </ul>
-        <a href="#" class="collection__btn">Показать еще</a>
+            </form>
+          </div>
+        </div>
+
+        <div class="catalog__content">
+          <nav class="breadcrumbs">
+            <a href="#" class="breadcrumbs__link">Главная</a>
+            <span class="breadcrumbs__link">Пеналы и комоды</span>
+          </nav>
+
+          <h1>Пеналы и комоды</h1>
+          <p>Наши дизайнеры намеренно отказались от кричащих форм и цветов, чтобы Barbara Q дополняла интерьер, а не доминировала в нем. Несмотря на это, эта мебель остается привлекательным и функциональным акцентом. Мы продумали все до мелочей, но сохранили возможность проявить творческий потенциал заказчика и создать пространство, отвечающее всем его требованиям и пожеланиям.</p>
+
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <a href="#" class="collection__link">
+                <figure class="collection__img">
+                  <img src="img/images/slide-1.png" alt="Название товара">
+                </figure>
+                <div class="collection__text">
+                  <p class="collection__title">Название товара</p>
+                  <p>Неоспоримое совершенство линий, которое будет радовать вас каждый день</p>
+                </div>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a href="#" class="collection__link">
+                <figure class="collection__img">
+                  <img src="img/images/slide-1.png" alt="Название товара">
+                </figure>
+                <div class="collection__text">
+                  <p class="collection__title">Название товара</p>
+                  <p>Неоспоримое совершенство линий, которое будет радовать вас каждый день</p>
+                </div>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a href="#" class="collection__link">
+                <figure class="collection__img">
+                  <img src="img/images/slide-1.png" alt="Название товара">
+                </figure>
+                <div class="collection__text">
+                  <p class="collection__title">Название товара</p>
+                  <p>Неоспоримое совершенство линий, которое будет радовать вас каждый день</p>
+                </div>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a href="#" class="collection__link">
+                <figure class="collection__img">
+                  <img src="img/images/slide-1.png" alt="Название товара">
+                </figure>
+                <div class="collection__text">
+                  <p class="collection__title">Название товара</p>
+                  <p>Неоспоримое совершенство линий, которое будет радовать вас каждый день</p>
+                </div>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a href="#" class="collection__link">
+                <figure class="collection__img">
+                  <img src="img/images/slide-1.png" alt="Название товара">
+                </figure>
+                <div class="collection__text">
+                  <p class="collection__title">Название товара</p>
+                  <p>Неоспоримое совершенство линий, которое будет радовать вас каждый день</p>
+                </div>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a href="#" class="collection__link">
+                <figure class="collection__img">
+                  <img src="img/images/slide-1.png" alt="Название товара">
+                </figure>
+                <div class="collection__text">
+                  <p class="collection__title">Название товара</p>
+                  <p>Неоспоримое совершенство линий, которое будет радовать вас каждый день</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     
     <section class="collection">
       <div class="wrapper">
         <div class="collection__info">
-          <p class="title">Популярное</p>
+          <p class="title">Тумбы</p>
           <p>Наши дизайнеры намеренно отказались от кричащих форм и цветов, чтобы Barbara Q дополняла интерьер, а не доминировала в нем. Несмотря на это, эта мебель остается привлекательным и функциональным акцентом. Мы продумали все до мелочей, но сохранили возможность проявить творческий потенциал заказчика и создать пространство, отвечающее всем его требованиям и пожеланиям.</p>
           <a href="#" class="link">Перейти в каталог Barbara Q</a>
         </div>
@@ -337,6 +400,15 @@
       slidesPerView: 'auto',
       spaceBetween: 32,
     });
+  </script>
+  
+<!-- Sidebar button in adaptive -->
+  <script>
+    if (window.innerWidth < 1022) {
+      $('.sidebar__btn').click(function() {
+        $('.sidebar__form').slideToggle();
+      });
+    };
   </script>
 </body>
 </html>
