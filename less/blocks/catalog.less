@@ -1,0 +1,64 @@
+.catalog {
+  position: relative;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    left: ~"calc(50% + 608px)";
+    height: 328px;
+    background-image: url(../img/images/flowers-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.catalog__content {
+  width: ~"calc(100% - 312px)";
+  
+  p {
+    max-width: 752px;
+  }
+}
+
+.catalog__list {
+  .reset();
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 90px;
+  margin-top: 90px;
+  position: relative;
+  z-index: 2;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    width: 1216px;
+    height: 536px;
+    border: solid 1px #f5f5f5;
+    background-color: #fafafa;
+  }
+}
+
+.catalog__item {
+  width: 280px;
+  margin-right: 32px;
+  margin-bottom: 32px;
+  
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+  
+  .collection__img {
+    border: solid 1px #f3f3f3;
+    background-color: #fafafa;
+  }
+}

@@ -156,6 +156,13 @@
 .collection__link {
   display: block;
   width: 100%;
+  
+  &:hover,
+  &:active {
+    .collection__title {
+      text-decoration: underline;
+    }
+  }
 }
 
 .collection__img {
