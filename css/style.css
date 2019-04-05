@@ -1646,9 +1646,21 @@ a.breadcrumbs__link:active {
   border-top: 1px solid rgba(216, 216, 216, 0.31);
 }
 .sidebar__title {
+  display: block;
   margin-top: 0;
+  margin-bottom: 15px;
   font-family: "Georgia", "Arial", sans-serif;
   color: #000;
+}
+a.sidebar__title {
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+a.sidebar__title:hover,
+a.sidebar__title:active {
+  color: #7a1942;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
 }
 .sidebar__wrap {
   display: -webkit-box;
