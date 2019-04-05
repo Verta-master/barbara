@@ -37,6 +37,10 @@
       margin-left: auto;
     }
   }
+  .collection__wrapper::before {
+    left: 25px;
+    right: 25px;
+  }
 }
 
 //---------------------------------------------
@@ -87,6 +91,8 @@
     padding-left: 16px;
     padding-right: 16px;
   }
+  .collection--catalog .collection__list::before,
+  .collection--catalog .collection__list::after,
   .position::before,
   .position__img::before {
     display: none;
@@ -116,6 +122,10 @@
     &:nth-child(4n) {
       margin-left: 0;
     }
+  }
+  .collection__wrapper::before {
+    left: 0;
+    right: 0;
   }
 }
 
