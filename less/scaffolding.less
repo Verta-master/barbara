@@ -83,6 +83,17 @@ h2,
   text-align: center;
 }
 
+.title a {
+  border-bottom: 1px solid #fff;
+  .transition();
+  
+  &:hover,
+  &:active {
+    border-color: @red;
+    .transition();
+  }
+}
+
 .link {
   display: inline-block;
   vertical-align: middle;
