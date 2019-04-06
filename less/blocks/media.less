@@ -161,6 +161,10 @@
       display: none;
     }
   }
+  .position__map {
+    padding: 0;
+    width: ~"calc(50% - 16px)";
+  }
 }
 
 //---------------------------------------
@@ -212,6 +216,7 @@
   .footer__wrap {
     flex-direction: column-reverse;
   }
+  .position__item,
   .catalog__content,
   .footer__block {
     width: 100%;
@@ -341,6 +346,13 @@
   .production__img {
     width: 100%;
   }
+  .position__wrap--top {
+    flex-direction: column-reverse;
+    
+    .position__info {
+      margin-top: 40px;
+    }
+  }
 }
 
 //--------------------------------------
@@ -357,6 +369,7 @@
     margin-right: 0;
     margin-bottom: 5px;
   }
+  .form__send,
   .benefits__info,
   .subscribe {
     width: 100%;
