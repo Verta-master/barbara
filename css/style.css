@@ -848,6 +848,12 @@ h2,
   left: -32px;
   right: 0;
 }
+.position--bg {
+  margin-bottom: 96px;
+}
+.position--bg::before {
+  display: none;
+}
 .position__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1877,6 +1883,62 @@ a.sidebar__title:active {
 .production__info .link {
   margin-top: 10px;
 }
+.price {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 96px;
+  text-align: center;
+}
+.price p span {
+  color: #7a1942;
+}
+.price__block {
+  position: relative;
+  padding: 56px 128px;
+  -webkit-box-shadow: 0 0 33px 0 rgba(0, 0, 0, 0.06);
+          box-shadow: 0 0 33px 0 rgba(0, 0, 0, 0.06);
+  border: solid 1px #fafafa;
+  background-color: #ffffff;
+}
+.price__block::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  bottom: -96px;
+  width: 624px;
+  background-color: #fafafa;
+}
+.price__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.price__form {
+  margin-top: 48px;
+}
+.price__form .form__input {
+  width: 32%;
+}
+.price__form .checkbox__label {
+  width: 32%;
+  margin-left: auto;
+  text-align: left;
+}
+.price__btn {
+  width: 32%;
+  height: 48px;
+  margin-bottom: 24px;
+  font-family: "Georgia", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+}
 @media (max-width: 1400px) {
   .wrapper {
     width: 100%;
@@ -2020,6 +2082,12 @@ a.sidebar__title:active {
   .production__info {
     padding: 30px;
   }
+  .price__block {
+    padding: 50px;
+  }
+  .price__block::before {
+    display: none;
+  }
 }
 @media (max-width: 1022px) {
   .sidebar__form,
@@ -2103,6 +2171,11 @@ a.sidebar__title:active {
   }
   .production {
     margin-bottom: 70px;
+  }
+  .price__form .checkbox__label,
+  .price__btn,
+  .price__form .form__input {
+    width: 45%;
   }
 }
 @media (max-width: 662px) {
@@ -2195,6 +2268,9 @@ a.sidebar__title:active {
   .production__item {
     display: block;
   }
+  .price__form .checkbox__label,
+  .price__btn,
+  .price__form .form__input,
   .production__img {
     width: 100%;
   }
@@ -2243,5 +2319,8 @@ a.sidebar__title:active {
   }
   .benefits__icon {
     margin-bottom: 15px;
+  }
+  .price__block {
+    padding: 20px;
   }
 }
